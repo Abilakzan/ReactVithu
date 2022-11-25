@@ -1,21 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Formulaire = (props) => {
+const FormulaireModif = (props) => {
     return (
-        <div className='formulaire'>
+        <div className='formulairemodif'>
             <form method="post" action="traitement.php">
                 <label for="nom">Votre nom :</label>
                 <input type="text" name="nom" id="nom" />
                 <br/>
                 <label for="prenom">Votre prénom :</label>
                 <input type="text" name="prenom" id="prenom" />
-                <br/>
-                <label for="email">Votre e-mail :</label>
-                <input type="email" name="email" id="email" />
-                <br/>
-                <label for="email2">Confirmer votre e-mail :</label>
-                <input type="email" name="email2" id="email2" />
                 <br/>
                 <label for="taille">Votre taille :</label>
                 <input type="number" name="taille" id="taille" />cm
@@ -37,15 +31,12 @@ const Formulaire = (props) => {
                 <label for="pass">Votre mot de passe :</label>
                 <input type="password" name="pass" id="pass" />
                 <br/>
-                <label for="pass2">Confirmer votre mot de passe :</label>
-                <input type="password" name="pass2" id="pass2" />
-                <br/>
-                <NavLink to="/traitement">
-                    <p>s'inscrire</p>
+                <NavLink to="/id">
+                    <p>Modifier</p>
                 </NavLink>
             </form>
         </div>
     );
 };
 
-export default Formulaire;
+export default FormulaireModif;
